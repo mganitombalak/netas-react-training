@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/header';
-import Profile from './components/profile'
+import ProfileContainer from './components/profile-container';
+
 // FIRST FUNCTION REACT COMPONENT
 const App = () => {
     return <div className="ui container">
         <Header />
-        <Profile />
+        <ProfileContainer/>
     </div>;
 };
 
