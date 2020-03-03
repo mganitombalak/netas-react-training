@@ -1,24 +1,28 @@
 import React from 'react';
 
-const Profile = (props) =>{
-    //console.log(props);
-    return (<div className="ui card">
-                <div className="image">
-                <img src={props.avatar}/>
-                </div>
-                <div className="content">
-                <a className="header">{props.name}</a>
+class Profile extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (<div className="ui card">
+            <div className="image">
+                <img src={this.props.avatar} />
+            </div>
+            <div className="content">
+                <a className="header">{this.props.name}</a>
                 <div className="meta">
-                    <span className="date">Joined in {props.date}</span>
+                    <span className="date">Joined in {this.props.date}</span>
                 </div>
                 <div className="description">
-                    {props.title}
+                    {this.props.title}
                 </div>
-                </div>
-                <div className="extra content">
-                <a><i className="user icon"></i>{props.numFriends} Friends</a>
-                </div>
-            </div>);
+            </div>
+            <div className="extra content">
+                <a><i className="user icon"></i>{this.props.numFriends} Friends</a>
+            </div>
+        </div>);
+    };
 }
 
 export default Profile;
