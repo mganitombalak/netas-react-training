@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Card = (props) => {
-    console.log(props);
-    return (<div className="card">
+class Card extends React.Component {
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return (<div className="card">
                 <div className="content">
-                   {props.children}
+                   {this.props.children}
                 </div>
                 <div className="extra content">
                     <div className="ui two buttons">
@@ -13,6 +16,7 @@ const Card = (props) => {
                     </div>
                 </div>
             </div>)
+    }
 }
 
 export default Card;
