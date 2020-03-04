@@ -4,7 +4,7 @@ import Header from './components/common/header';
 import ProfileList from './pages/profile-list/index';
 import Category from './pages/category/index'
 import { HashRouter, Route } from 'react-router-dom';
-
+import './App.css'
 // FIRST FUNCTION REACT COMPONENT
 const App = () => {
     return <div className="ui container">
