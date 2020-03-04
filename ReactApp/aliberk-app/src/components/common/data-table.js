@@ -13,7 +13,7 @@ export default class DataTable extends React.Component {
                     index={index}
                     {...item}
                     startColIndex={0}
-                    endColIndex={5}
+                    endColIndex={3}
                 />
             })
         } else {
