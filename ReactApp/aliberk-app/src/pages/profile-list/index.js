@@ -1,8 +1,8 @@
 import React from 'react';
-import Profile from './profile'
-import Card from './card';
+import Profile from '../../components/dashboard/profile'
+import Card from '../../components/dashboard/card';
 import faker from 'faker';
-const ProfileContainer = () => {
+const ProfileList = () => {
     let Profiles = [{
         firstName: faker.name.firstName(),
         title: faker.name.title(),
@@ -68,4 +68,4 @@ const ProfileContainer = () => {
     </div>);
 }
 
-export default ProfileContainer;
+export default ProfileList;
